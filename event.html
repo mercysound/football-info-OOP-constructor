@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="showEvent" oninput="revealEve()">check Event</button>
+  <input type="text" name="" id="myInp" oninput="myInp(event)">
+  <table border="1" height="250px" width="200px">
+    <tr>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+    </tr>
+    <tr>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+    </tr>
+    <tr>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+      <td onclick="showtext(event)"></td>
+    </tr>
+  </table>
+  <script>
+    // simple tic tac example
+    var currentInner = "X"
+    function showtext(e){
+      // alert("work")
+      // console.log(e.target.innerText);
+      if(currentInner == "X" && e.target.innerText == ""){
+        e.target.innerText = currentInner
+        currentInner = "O"
+      }else if(currentInner == "O" && e.target.innerText == ""){
+        e.target.innerText = currentInner
+        currentInner = "X"
+      }
+    }
+  // document.getElementById("showEvent").addEventListener("click", (e)=>{
+  //     console.log()
+  //   })
+  function myInp (e){
+    console.log(e.target.value);
+  }
+    // .addEventListener("click")
+  </script>
+</body>
+</html>

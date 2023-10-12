@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <!-- <h1>Exploring Oop</h1> -->
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <button class="btn btn-success" onclick="create()">Create Line</button>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex gap-1 flex-wrap">
+    <div class="p1inp mt-0 border w-25 text-center border-2 p-2">
+      <h5 class="my-0">Player 1 Details</h5>
+      <div class="inputG d-flex">
+        <input type="text" placeholder="Player No" class="form-control w-50 m-1" id="p1No">
+      <input type="text" placeholder="Name Player" class="form-control w-50 m-1" id="p1Name">
+      <input type="text" placeholder="Wing Playing" class="form-control w-50 m-1" id="p1Wing">
+      </div>
+    </div>
+    <div class="p1inp mt-0 border w-25 text-center border-2 p-2">
+      <h5 class="my-0">Player 2 Details</h5>
+      <div class="inputG d-flex">
+        <input type="text" placeholder="Player No" class="form-control w-50 m-1" id="pOneNo">
+      <input type="text" placeholder="Name Player" class="form-control w-50 m-1" id="pOneName">
+      <input type="text" placeholder="Wing Playing" class="form-control w-50 m-1" id="pOneWing">
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="inside-pic text-center text-primary">
+    <div class="lineUpPic">
+    </div>
+    <div class="p1">
+      <p class="m-0" id="pName1">Joy</p>
+      <h3 class="m-0 p-0" id="pNo1">3</h3>
+      <p class="m-0 p-0" id="pWing1">striker</p>
+    </div>
+    <div class="p2">
+      <p class="m-0" id="pNam2e">Joy</p>
+      <h3 class="m-0 p-0" id="pNo2">3</h3>
+      <p class="m-0 p-0" id="pWing2">striker</p>
+    </div>
+    <div class="p3">
+      <p class="m-0" id="pName3">Joy</p>
+      <h3 class="m-0 p-0" id="pNo3">3</h3>
+      <p class="m-0 p-0" id="pWing3">striker</p>
+    </div>
+    <div class="p4">
+      <p class="m-0" id="pName4">Joy</p>
+      <h3 class="m-0 p-0" id="pNo4">3</h3>
+      <p class="m-0 p-0" id="pWing4">striker</p>
+    </div>
+    <div class="p5">
+      <p class="m-0" id="pName5">Joy</p>
+      <h3 class="m-0 p-0" id="pNo5">3</h3>
+      <p class="m-0 p-0" id="pWing5">striker</p>
+    </div>
+    <div class="p6">
+      <p class="m-0" id="pName6">Joy</p>
+      <h3 class="m-0 p-0" id="pNo6">3</h3>
+      <p class="m-0 p-0" id="pWing6">striker</p>
+    </div>
+    <div class="p7">
+      <p class="m-0" id="pName7">Joy</p>
+      <h3 class="m-0 p-0" id="pNo7">3</h3>
+      <p class="m-0 p-0" id="pWing7">striker</p>
+    </div>
+    <div class="p8">
+      <p class="m-0" id="pName88">Joy</p>
+      <h3 class="m-0 p-0" id="pNo8">3</h3>
+      <p class="m-0 p-0" id="pWing8">striker</p>
+    </div>
+    <div class="p9">
+      <p class="m-0" id="pName8">Joy</p>
+      <h3 class="m-0 p-0" id="pNo8">3</h3>
+      <p class="m-0 p-0" id="pWing8">striker</p>
+    </div>
+    <div class="p10">
+      <p class="m-0" id="pName9">Joy</p>
+      <h3 class="m-0 p-0" id="pNo9">3</h3>
+      <p class="m-0 p-0" id="pWing9">striker</p>
+    </div>
+    <div class="p11">
+      <p class="m-0" id="pName10">Joy</p>
+      <h3 class="m-0 p-0" id="pNo10">3</h3>
+      <p class="m-0 p-0" id="pWing10">striker</p>
+    </div>
+  </div>
+  <script>
+    class Car {
+      constructor (color, tire, roofType, noOfDoors){
+        this.color = color
+        this.tire = tire,
+        this.roofType = roofType,
+        this.noOfDoors = noOfDoors
+      }
+      pin(soun){
+        console.log(soun);
+      }
+    }
+    class myCar extends Car{
+
+    }
+    var forMyNewcar = new myCar("oall","gbae", "forver", 2)
+    var kunleCar = new Car("blue", 4, "convertible", 2)
+    console.log(forMyNewcar);
+    // kunleCar.pin("vroom")
+    // console.log(Car);
+  </script>
+  <script src="js/bootstrap.js"></script>
+  <script src="jsFile.js"></script>
+</body>
+</html>
