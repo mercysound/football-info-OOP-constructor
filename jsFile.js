@@ -16,6 +16,7 @@ const create = () =>{
   pName1.innerHTML = player1.pName
   pNo1.innerHTML = player1.pNumber
   pWing1.innerHTML = player1.pWing
+  console.log(player1)
   //
 var forPTwoName = p2Name.value;
 var forPTwoNo = p2No.value;
@@ -78,9 +79,9 @@ pWing7.innerHTML = player7.pWing
 console.log(player2);
   //
 //
-var forPEightName = p10Name.value;
-var forPEightNo = p10No.value;
-var forPEightWing = p10Wing.value;
+var forPEightName = p8Name.value;
+var forPEightNo = p8No.value;
+var forPEightWing = p8Wing.value;
 var player8 = new PlayersBluePrint(forPEightName, forPEightNo, forPEightWing)
 // alert("is woor")
 pName8.innerHTML = player8.pName
@@ -109,13 +110,13 @@ pWing10.innerHTML = player10.pWing
 console.log(player10);
 
 //
-var forPElevenName = p10Name.value;
-var forPElevenNo = p10No.value;
-var forPElevenWing = p10Wing.value;
+var forPElevenName = p11Name.value;
+var forPElevenNo = p11No.value;
+var forPElevenWing = p11Wing.value;
 var player11 = new PlayersBluePrint(forPElevenName, forPElevenNo, forPElevenWing)
 // alert("is woor")
 pName11.innerHTML = player11.pName
-pNo11.innerHTML = player10.pNumber
+pNo11.innerHTML = player11.pNumber
 pWing11.innerHTML = player11.pWing
 console.log(player11);
 }

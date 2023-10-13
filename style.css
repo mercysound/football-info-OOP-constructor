@@ -7,6 +7,7 @@ body{
 
 .inside-pic{
   position: relative;
+  margin-left: 4%;
 }
 
 .lineUpPic{
@@ -74,4 +75,16 @@ body{
   position: absolute;
   right: 51%;
   top: 69%;
+}
+
+@media screen and (max-width: 600px) {
+  .p1inp{
+    width: 400px !important;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+
+  }
+  /* .inputG input{
+   
+  } */
 }
