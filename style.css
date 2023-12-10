@@ -79,7 +79,7 @@ body{
 
 @media screen and (max-width: 600px) {
   .p1inp{
-    width: 400px !important;
+    width: 400px ;
     /* display: flex; */
     /* flex-wrap: wrap; */
 
@@ -87,4 +87,22 @@ body{
   /* .inputG input{
    
   } */
+}
+/* this rep the input for sm for block */
+
+@media screen and (max-width: 768px) {
+  .inputG {
+    /* display: block !important;  */
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+
+  }
+  .p1inp, .inputG input{
+    width: 100%;
+  }
+  .p1inp {
+    margin: 8px 0 ;
+
+  }
 }
